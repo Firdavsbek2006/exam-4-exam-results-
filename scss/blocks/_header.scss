@@ -1,0 +1,130 @@
+
+.form__label, .form__select-label{
+    margin-top: 10px;
+}
+
+.form__labell{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__labell input{
+    width: 45%;
+}
+
+#btn-f{
+    color: white;
+    margin-top: 10px;
+    padding: 5px 0;
+    border: 1px solid blue;
+    background-color: rgb(32, 103, 209);
+    border-radius: 3px;
+}
+
+.right__top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#btn-add,
+#btn-ad,
+#btn-a{
+    color: white;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: 1px solid blue;
+    background-color: rgb(32, 103, 209);
+    border-radius: 3px;
+}
+
+table{
+    text-align: center;
+}
+
+.modal-window{
+    width: 100% !important;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.462);
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+.modal-window .modal-body {
+    max-width: 600px;
+    min-height: 350px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modall-window{
+  width: 100% !important;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.462);
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+
+.modall-window .modal-body {
+  max-width: 600px;
+  min-height: 350px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modal__top{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.modal-body form{
+    padding: 10px;
+}
+
+input{
+    padding: 5px;
+}
+
+  @media only screen and (max-width: 770px) {
+    .big-wrapper{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-wrapper{
+      width: 300px;
+      flex-direction: row !important;
+    }
+
+    .right__wrapper{
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }

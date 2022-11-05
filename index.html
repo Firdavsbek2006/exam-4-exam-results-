@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Exam results</title>
+</head>
+<body>
+    <div class="container pt-sm-5">
+        <div class="big-wrapper d-flex gap-5">
+            <div class="left-wrapper col-3 d-flex flex-column gap-4">
+                <h1 class="left__title">Exam results</h1>
+                <form class="form-bir form d-flex flex-column gap-2">
+                    <h2 class="form__title fs-4">Filter</h2>
+                    <label class="form__label" for="input1">Search</label>
+                    <input type="search" placeholder="Name" id="input1" required>
+                    <label class="form__label" for="input2">Mark</label>
+                    <label class="form__labell" id="input 2">
+                        <input type="number" placeholder="From" min="0" max="180" required>
+                        <input type="number" placeholder="To" min="0" max="180" required>
+                    </label>
+                    <label for="select" class="form__select-label">Sort by</label>
+                    <select id="select">
+                        <option value="name">Name</option>
+                        <option value="name">Mark: to lowest</option>
+                        <option value="name">Mark/; to highest</option>
+                        <option value="name">Marked date</option>
+                    </select>
+                    <button id="btn-f" type="submit">Filter</button>
+                </form>
+            </div>
+            <div class="right-wrapper col-8 d-flex flex-column gap-4">
+                <div class="right__top d-flex justify-content-between gap-5">
+                    <button id="btn-add" type="button">Add new student <i class="bi bi-plus-lg"></i></button>
+                </div>
+                <div class="right__center-wrapper d-flex justify-content-between">
+                    <h2 class="titlee">Students list</h2>
+                    <div class="right__sub-div d-flex flex-column">
+                        <p class="count-text align-self-end">Count: <strong class="count">4</strong></p>
+                        <p class="mark-text">Average mark: <strong class="count-procent">65%</strong></p>
+                    </div>
+                </div>
+                <div class="right__bottom">
+                    <table class="table table-striped table-hover table-bordered">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name & Lastname</th>
+                            <th>Marked date</th>
+                            <th>Mark</th>
+                            <th>Status</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody class="wrapper">
+                           
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal window -->
+    <div class="modal-window d-none">
+        <div class="modal-body">
+          <div class="modal__top">
+            <h2 class="modal__top-title fs-4">Add student</h2>
+            <button class="btn-close" id="btn-close"><i class="bi"></i></button>
+          </div>
+          <form class="form form-a d-flex flex-column gap-2" autocomplete="on">
+            <label class="form__label" for="name">Name</label>
+            <input type="name" placeholder="Firdavs" id="name" required>
+            <label class="form__label" for="lastName">Lastname</label>
+            <input type="name" placeholder="Yusupov" id="lastName" required>
+            <label class="form__label" for="mark">Mark</label>
+            <input type="number" id="mark" placeholder="0" min="0" max="180" required>
+            <button id="btn-ad" type="button">Add Student</button>
+        </form>
+        </div>
+    </div>
+    <div class="modall-window d-none">
+        <div class="modal-body">
+          <div class="modal__top">
+            <h2 class="modal__top-title fs-4">Edit student</h2>
+            <button class="btn-close" id="btn-closee"><i class="bi"></i></button>
+          </div>
+          <form class="form form-a d-flex flex-column gap-2" autocomplete="on">
+            <label class="form__label" for="name">Name</label>
+            <input type="name" placeholder="Firdavs" id="namee" required>
+            <label class="form__label" for="lastName">Lastname</label>
+            <input type="name" placeholder="Yusupov" id="lastNamee" required>
+            <label class="form__label" for="mark">Mark</label>
+            <input type="number" id="markk" placeholder="0" min="0" max="180" required>
+            <button id="btn-a" type="button">Edit Student</button>
+        </form>
+        </div>
+    </div>
+
+
+      <script src="./js/utils.js"></script>
+      <script src="./js/app.js"></script>
+</body>
+</html>

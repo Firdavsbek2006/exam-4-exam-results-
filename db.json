@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "xml-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "students": [
+    {
+      "name": "Yusufboy",
+      "lastname": "Yusupov",
+      "mark": "180",
+      "date": 5,
+      "id": 1
+    },
+    {
+      "name": "Nargiza",
+      "lastname": "Masharipova",
+      "mark": "170",
+      "date": 5,
+      "id": 2
+    },
+    {
+      "name": "Mustafo",
+      "lastname": "Yusupov",
+      "mark": "90",
+      "date": 5,
+      "id": 3
+    },
+    {
+      "name": "Firdavs",
+      "lastname": "Yusupov",
+      "mark": "110",
+      "date": 5,
+      "id": 4
+    }
+  ]
+}
